@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layers, Clock, AlertCircle, Sparkles, BookOpen } from 'lucide-react';
+import { Layers, Clock, AlertCircle, BookOpen } from 'lucide-react';
 import { conferenceConfig } from '../config/conferenceConfig';
 
 export const CommitteesSection: React.FC = () => {

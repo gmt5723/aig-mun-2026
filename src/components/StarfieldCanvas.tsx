@@ -109,11 +109,7 @@ export const StarfieldCanvas: React.FC = () => {
     };
 
     // Render loop
-    let lastTime = performance.now();
-
-    const render = (time: number) => {
-      const dt = (time - lastTime) / 1000;
-      lastTime = time;
+    const render = () => {
 
       // Parallax smooth interpolation
       mouseX += (targetMouseX - mouseX) * 0.05;
@@ -243,7 +239,7 @@ export const StarfieldCanvas: React.FC = () => {
     };
 
     if (prefersReducedMotion) {
-      render(0);
+      render();
     } else {
       animationFrameId = requestAnimationFrame(render);
     }
