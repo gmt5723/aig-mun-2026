@@ -6,7 +6,14 @@ export const CommitteesSection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const { committees } = conferenceConfig;
 
-  const categories = ['All', 'General Assembly', 'Security Council', 'Specialized Agency', 'Crisis Committee'];
+  const categories = [
+    'All',
+    'General Assembly',
+    'Specialized Agency',
+    'Regional Body',
+    'Crisis Committee',
+    'International Press'
+  ];
 
   const filteredCommittees = activeCategory === 'All'
     ? committees.items

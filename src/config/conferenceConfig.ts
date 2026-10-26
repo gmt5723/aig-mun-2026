@@ -10,7 +10,7 @@ export interface Committee {
   id: string;
   name: string;
   shortName: string;
-  category: 'General Assembly' | 'Security Council' | 'Specialized Agency' | 'Crisis Committee';
+  category: 'General Assembly' | 'Specialized Agency' | 'Regional Body' | 'Crisis Committee' | 'International Press' | string;
   difficulty: 'Beginner Friendly' | 'Intermediate' | 'Advanced' | 'All Experience Levels';
   agenda: string;
   description: string;
@@ -174,27 +174,17 @@ export const conferenceConfig: ConferenceConfig = {
   },
 
   committees: {
-    areAnnounced: false, // Toggle to true when official committees are finalized
-    announcementNotice: "The AiG MUN Academic Directorate is finalizing the official committee matrices, global agendas, and background dossiers. Official committees will be unveiled shortly.",
+    areAnnounced: true, // Official committees announced
+    announcementNotice: "The official committees for AiG MUN 2026 have been announced. Comprehensive study guides, committee agendas, and country matrices will be released shortly.",
     items: [
       {
-        id: "unga-disec",
-        name: "United Nations General Assembly — First Committee (DISEC)",
-        shortName: "UNGA DISEC",
+        id: "unga",
+        name: "United Nations General Assembly",
+        shortName: "UNGA",
         category: "General Assembly",
         difficulty: "Beginner Friendly",
         agenda: "Agenda To Be Announced",
-        description: "Addressing contemporary challenges in international security, disarmament frameworks, and multilateral non-proliferation accords in modern global governance.",
-        matrixAvailable: false
-      },
-      {
-        id: "unsc",
-        name: "United Nations Security Council",
-        shortName: "UNSC",
-        category: "Security Council",
-        difficulty: "Advanced",
-        agenda: "Agenda To Be Announced",
-        description: "Exercising primary responsibility under the UN Charter for the maintenance of international peace, stability, and crisis de-escalation.",
+        description: "The primary policy-making organ of the United Nations, offering a multilateral platform where all member states convene to debate international security, cooperation, and global initiatives.",
         matrixAvailable: false
       },
       {
@@ -204,27 +194,57 @@ export const conferenceConfig: ConferenceConfig = {
         category: "Specialized Agency",
         difficulty: "Intermediate",
         agenda: "Agenda To Be Announced",
-        description: "Promoting universal protection of human rights, addressing situations of human rights violations, and making actionable diplomatic recommendations.",
+        description: "Charged with strengthening the promotion and protection of human rights worldwide, addressing violations, and formulating actionable diplomatic resolutions for human dignity.",
         matrixAvailable: false
       },
       {
-        id: "unodc",
-        name: "United Nations Office on Drugs and Crime",
-        shortName: "UNODC",
+        id: "ecosoc",
+        name: "United Nations Economic and Social Council",
+        shortName: "ECOSOC",
         category: "Specialized Agency",
         difficulty: "Intermediate",
         agenda: "Agenda To Be Announced",
-        description: "Formulating coordinated international responses to transnational organized crime, illicit trafficking, and systemic governance integrity.",
+        description: "The premier UN forum for coordinating economic, social, environmental, and developmental policies, fostering multilateral solutions for global progress and sustainability.",
         matrixAvailable: false
       },
       {
-        id: "hcc",
-        name: "Historic / Futuristic Continuous Crisis Committee",
-        shortName: "Crisis Committee",
+        id: "aippm",
+        name: "All India Political Parties Meet",
+        shortName: "AIPPM",
+        category: "Regional Body",
+        difficulty: "Intermediate",
+        agenda: "Agenda To Be Announced",
+        description: "A dynamic simulation of India's parliamentary architecture and diverse political factions convening to debate national policy, governance reforms, and strategic domestic issues.",
+        matrixAvailable: false
+      },
+      {
+        id: "ip-journalism",
+        name: "International Press — IP Journalism",
+        shortName: "IP Journalism",
+        category: "International Press",
+        difficulty: "All Experience Levels",
+        agenda: "Press Briefs & Investigative Reporting (Guidelines TBA)",
+        description: "The journalistic vanguard of AiG MUN, responsible for interviewing ambassadors, publishing press bulletins, investigating bloc maneuvers, and delivering fair, unfiltered reporting.",
+        matrixAvailable: false
+      },
+      {
+        id: "ip-photography",
+        name: "International Press — IP Photography",
+        shortName: "IP Photography",
+        category: "International Press",
+        difficulty: "All Experience Levels",
+        agenda: "Photojournalism Portfolio & Visual Media Coverage (Guidelines TBA)",
+        description: "Visual storytellers tasked with capturing the raw emotion, intense debates, bilateral consultations, and iconic assembly moments across all conference chambers.",
+        matrixAvailable: false
+      },
+      {
+        id: "crisis-reich-cabinet-3",
+        name: "Continuous Crisis Committee: Reich Cabinet 3",
+        shortName: "Crisis Committee: Reich Cabinet 3",
         category: "Crisis Committee",
         difficulty: "Advanced",
-        agenda: "Agenda To Be Announced",
-        description: "A fast-paced, directive-driven simulated cabinet navigating rapidly evolving geopolitical crises and high-stakes diplomatic negotiations.",
+        agenda: "Classified Crisis Directives (To Be Announced)",
+        description: "A fast-paced, high-stakes historic continuous crisis committee navigating wartime cabinet deliberations, intelligence communiqués, covert directives, and turbulent geopolitical developments.",
         matrixAvailable: false
       }
     ]
