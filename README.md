@@ -1,6 +1,7 @@
 # AiG MUN 2026 — Official Conference Website
 > **"Peace. Progress. Prosperity."**  
-> *Model United Nations Conference — 12th & 13th December 2026*
+> *Model United Nations Conference — 12th & 13th December 2026*  
+> 🌐 **Live Website**: [https://aig-mun-2026.tg7012.workers.dev/](https://aig-mun-2026.tg7012.workers.dev/)
 
 ![AiG MUN Banner](public/assets/aig-mun-poster.png)
 
