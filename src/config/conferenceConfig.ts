@@ -81,6 +81,7 @@ export interface ConferenceConfig {
     isOpen: boolean;
     statusText: string;
     externalUrl: string; // Google Form or Registration Portal URL when active
+    notificationWebhookUrl?: string; // Optional: Web3Forms, Formspree, or Google Apps Script URL to receive emails
     earlyBirdDeadline: string;
     regularDeadline: string;
     delegateFee: string;
@@ -160,6 +161,7 @@ export const conferenceConfig: ConferenceConfig = {
     isOpen: false, // Set to true once official Google Form / Registration portal link is ready
     statusText: "Registrations Opening Soon",
     externalUrl: "", // Paste Google Forms / Delegate Portal URL here
+    notificationWebhookUrl: "", // Paste Web3Forms (https://api.web3forms.com/submit), Formspree, or Google Sheet endpoint here
     earlyBirdDeadline: "To Be Announced",
     regularDeadline: "To Be Announced",
     delegateFee: "To Be Announced",

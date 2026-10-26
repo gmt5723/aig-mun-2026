@@ -11,6 +11,8 @@ export const RegistrationSection: React.FC = () => {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [notificationError, setNotificationError] = useState('');
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   useEffect(() => {
     // Check if user already joined notification list in this browser
     const stored = localStorage.getItem('aig_mun_notification_registered');
@@ -19,7 +21,7 @@ export const RegistrationSection: React.FC = () => {
     }
   }, []);
 
-  const handleNotifySubmit = (e: React.FormEvent) => {
+  const handleNotifySubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setNotificationError('');
 
@@ -28,15 +30,34 @@ export const RegistrationSection: React.FC = () => {
       return;
     }
 
+    setIsSubmitting(true);
+
     try {
-      // Save notification entry in localStorage safely
       const payload = {
         name: nameInput || 'Prospective Delegate',
         email: emailInput,
         preference: rolePreference,
         registeredAt: new Date().toISOString(),
+        subject: `New AiG MUN 2026 Delegate Alert Registration: ${nameInput || emailInput}`,
       };
-      
+
+      // If an external email webhook / Google Form endpoint is configured, forward submission
+      if (registration.notificationWebhookUrl) {
+        try {
+          await fetch(registration.notificationWebhookUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+            },
+            body: JSON.stringify(payload),
+          });
+        } catch (err) {
+          console.warn('Webhook transmission notice:', err);
+        }
+      }
+
+      // Save notification entry in localStorage as client-side backup
       const existingList = JSON.parse(localStorage.getItem('aig_mun_registry_emails') || '[]');
       existingList.push(payload);
       localStorage.setItem('aig_mun_registry_emails', JSON.stringify(existingList));
@@ -52,6 +73,8 @@ export const RegistrationSection: React.FC = () => {
       });
     } catch {
       setIsSubscribed(true);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -235,9 +258,10 @@ export const RegistrationSection: React.FC = () => {
 
                       <button
                         type="submit"
-                        className="w-full py-3 rounded-lg border border-celestial-ice/50 bg-gradient-to-r from-celestial-blue/60 via-space-800 to-celestial-blue/50 text-white font-serif text-xs uppercase tracking-widest font-semibold hover:border-celestial-ice hover:shadow-[0_0_20px_rgba(140,206,255,0.3)] transition-all cursor-pointer"
+                        disabled={isSubmitting}
+                        className="w-full py-3 rounded-lg border border-celestial-ice/50 bg-gradient-to-r from-celestial-blue/60 via-space-800 to-celestial-blue/50 text-white font-serif text-xs uppercase tracking-widest font-semibold hover:border-celestial-ice hover:shadow-[0_0_20px_rgba(140,206,255,0.3)] transition-all cursor-pointer disabled:opacity-50"
                       >
-                        Notify Me on Launch
+                        {isSubmitting ? 'Transmitting Registration...' : 'Notify Me on Launch'}
                       </button>
 
                       <p className="text-[10px] text-slate-500 font-mono text-center">
