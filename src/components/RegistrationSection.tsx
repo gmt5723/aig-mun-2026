@@ -15,7 +15,7 @@ export const RegistrationSection: React.FC = () => {
 
   useEffect(() => {
     // Check if user already joined notification list in this browser
-    const stored = localStorage.getItem('aig_mun_notification_registered');
+    const stored = localStorage.getItem('aic_mun_notification_registered');
     if (stored) {
       setIsSubscribed(true);
     }
@@ -38,7 +38,7 @@ export const RegistrationSection: React.FC = () => {
         email: emailInput,
         preference: rolePreference,
         registeredAt: new Date().toISOString(),
-        subject: `New AiG MUN 2026 Delegate Alert Registration: ${nameInput || emailInput}`,
+        subject: `New AIC MUN 2026 Delegate Alert Registration: ${nameInput || emailInput}`,
       };
 
       // If an external email webhook / Google Form endpoint is configured, forward submission
@@ -58,10 +58,10 @@ export const RegistrationSection: React.FC = () => {
       }
 
       // Save notification entry in localStorage as client-side backup
-      const existingList = JSON.parse(localStorage.getItem('aig_mun_registry_emails') || '[]');
+      const existingList = JSON.parse(localStorage.getItem('aic_mun_registry_emails') || '[]');
       existingList.push(payload);
-      localStorage.setItem('aig_mun_registry_emails', JSON.stringify(existingList));
-      localStorage.setItem('aig_mun_notification_registered', 'true');
+      localStorage.setItem('aic_mun_registry_emails', JSON.stringify(existingList));
+      localStorage.setItem('aic_mun_notification_registered', 'true');
       setIsSubscribed(true);
 
       // Trigger celebratory celestial confetti
@@ -115,11 +115,11 @@ export const RegistrationSection: React.FC = () => {
               <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white tracking-wide">
                 {registration.isOpen 
                   ? 'Official Delegate Applications are Now Live' 
-                  : 'Registrations Opening Soon for AiG MUN 2026'}
+                  : 'Registrations Opening Soon for AIC MUN 2026'}
               </h3>
 
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-light">
-                Whether you represent an institution as a head delegate, attend as an independent scholar, or advise a youth delegation, AiG MUN offers an unmatched standard of academic rigor and diplomatic refinement.
+                Whether you represent an institution as a head delegate, attend as an independent scholar, or advise a youth delegation, AIC MUN offers an unmatched standard of academic rigor and diplomatic refinement.
               </p>
 
               {/* Fee & Deadline Table Placeholders */}

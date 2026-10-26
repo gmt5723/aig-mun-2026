@@ -38,7 +38,7 @@ export const AboutSection: React.FC = () => {
                 <div className="relative rounded-xl overflow-hidden aspect-[9/16] bg-space-950">
                   <img
                     src="/assets/aig-mun-poster.png"
-                    alt="AiG MUN Official Conference Artwork"
+                    alt="AIC MUN Official Conference Artwork"
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                     loading="lazy"
                   />
@@ -73,7 +73,7 @@ export const AboutSection: React.FC = () => {
                 In an era characterized by rapid technological advancement and interconnected geopolitical systems, the challenges we face—from artificial intelligence governance to ecological conservation, peacebuilding, and human rights—transcend state borders.
               </p>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                At AiG MUN, delegates immerse themselves in real multilateral negotiations. Through structured parliamentary debate, unmoderated caucusing, and resolution drafting, participants discover that meaningful progress is not achieved through unilateral decree, but through principled compromise and articulate diplomacy.
+                At AIC MUN, delegates immerse themselves in real multilateral negotiations. Through structured parliamentary debate, unmoderated caucusing, and resolution drafting, participants discover that meaningful progress is not achieved through unilateral decree, but through principled compromise and articulate diplomacy.
               </p>
             </div>
 
@@ -121,10 +121,10 @@ export const AboutSection: React.FC = () => {
             {/* Quote / Editorial Manifesto */}
             <div className="p-5 rounded-xl border-l-2 border-celestial-ice bg-space-800/40 relative">
               <blockquote className="text-sm sm:text-base italic text-slate-200">
-                "When viewed from cosmic orbit, the Earth displays no borders—only an interconnected cradle of humanity. AiG MUN calls upon the youth of today to safeguard that fragile blue marble through the power of diplomacy."
+                "When viewed from cosmic orbit, the Earth displays no borders—only an interconnected cradle of humanity. AIC MUN calls upon the youth of today to safeguard that fragile blue marble through the power of diplomacy."
               </blockquote>
               <p className="text-[11px] font-mono text-celestial-ice/80 mt-2 uppercase tracking-widest">
-                — AiG MUN Secretariat Philosophy
+                — AIC MUN Secretariat Philosophy
               </p>
             </div>
 

@@ -32,7 +32,7 @@ export const ContactFooter: React.FC = () => {
               <div className="w-12 h-12 rounded-full border border-celestial-ice/40 bg-space-800 p-1 flex items-center justify-center shadow-[0_0_15px_rgba(140,206,255,0.25)]">
                 <img 
                   src="/assets/aig-mun-logo-transparent.png" 
-                  alt="AiG MUN Logo" 
+                  alt="AIC MUN Logo" 
                   className="w-full h-full object-contain"
                 />
               </div>

@@ -1,11 +1,11 @@
-# AiG MUN 2026 — Official Conference Website
+# AIC MUN 2026 — Official Conference Website
 > **"Peace. Progress. Prosperity."**  
 > *Model United Nations Conference — 12th & 13th December 2026*  
 > 🌐 **Live Website**: [https://aig-mun-2026.tg7012.workers.dev/](https://aig-mun-2026.tg7012.workers.dev/)
 
-![AiG MUN Banner](public/assets/aig-mun-poster.png)
+![AIC MUN Banner](public/assets/aig-mun-poster.png)
 
-A luxury, futuristic, dark-themed official website engineered for **AiG MUN (Model United Nations)**. Inspired by celestial aesthetics, international diplomacy, and space-inspired elegance, this web application serves prospective delegates, institutional delegations, executive board members, faculty advisors, and conference partners.
+A luxury, futuristic, dark-themed official website engineered for **AIC MUN (Model United Nations)**. Inspired by celestial aesthetics, international diplomacy, and space-inspired elegance, this web application serves prospective delegates, institutional delegations, executive board members, faculty advisors, and conference partners.
 
 ---
 
@@ -15,7 +15,7 @@ A luxury, futuristic, dark-themed official website engineered for **AiG MUN (Mod
 - **Dynamic 2D Canvas Starfield**: Multi-layered depth parallax, sinusoidal twinkling, interactive cursor reaction, occasional meteors (shooting stars), and subtle constellation linkages. Fully honors `prefers-reduced-motion`.
 - **Live Timezone-Safe Countdown**: Real-time ticker counting down to **12th December 2026, 09:00 AM IST** (Asia/Kolkata timezone).
 - **Single Source of Truth Configuration**: Every piece of conference information (dates, committees, registration status, schedule, secretariat, contacts) is centralized in `src/config/conferenceConfig.ts`. The organizing team can modify content without writing a single line of React code.
-- **Transparent Brand Asset Pipeline**: Authentic AiG MUN brand artwork and emblem extracted directly from original reference artwork with smooth atmospheric blending.
+- **Transparent Brand Asset Pipeline**: Authentic AIC MUN brand artwork and emblem extracted directly from original reference artwork with smooth atmospheric blending.
 - **Priority Delegate Alert Registry**: Fully client-side notification list with `localStorage` persistence and celebratory confetti effects, ensuring prospective delegates are alerted the moment registrations open without requiring a backend database.
 - **Two-Day Interactive Schedule & Calendar Sync**: Tabbed itinerary for 12th & 13th December with one-click **Save to Calendar (.ics)** generation for Google Calendar, Apple Calendar, and Outlook.
 - **Production-Ready & Static-First**: Built with React, TypeScript, Vite, and Tailwind CSS. Zero external server costs, 100% free hosting compatibility with **Cloudflare Pages**.
@@ -145,9 +145,9 @@ secretariat: {
       name: "Your Name",
       role: "Secretary-General",
       division: "Executive Secretariat",
-      bio: "Leading the strategic and diplomatic agenda for AiG MUN 2026.",
+      bio: "Leading the strategic and diplomatic agenda for AIC MUN 2026.",
       image: "/assets/team/secretary-general.jpg", // Place image in public/assets/team/
-      email: "sg@aigmun.org",
+      email: "sg@aicmun.org",
       linkedin: "https://linkedin.com/in/yourprofile"
     }
   ]
@@ -207,5 +207,5 @@ This project is optimized for zero-cost deployment on **Cloudflare Pages** with 
 
 ## ⚖️ License & Intellectual Property
 
-&copy; 2026 AiG MUN. All rights reserved.  
-"Peace. Progress. Prosperity." and the AiG MUN emblem are official trademarks of the AiG MUN Conference Secretariat.
+&copy; 2026 AIC MUN. All rights reserved.  
+"Peace. Progress. Prosperity." and the AIC MUN emblem are official trademarks of the AIC MUN Conference Secretariat.

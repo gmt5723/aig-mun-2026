@@ -13,17 +13,17 @@ export const ScheduleSection: React.FC = () => {
     const icsContent = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
-      'PRODID:-//AiG MUN//Official Conference 2026//EN',
+      'PRODID:-//AIC MUN//Official Conference 2026//EN',
       'CALSCALE:GREGORIAN',
       'METHOD:PUBLISH',
       'BEGIN:VEVENT',
-      'UID:aigmun2026-conference@aigmun.org',
+      'UID:aicmun2026-conference@aicmun.org',
       'DTSTAMP:20261026T000000Z',
       'DTSTART:20261212T033000Z', // 09:00 IST = 03:30 UTC
       'DTEND:20261213T133000Z',   // 19:00 IST = 13:30 UTC
-      'SUMMARY:AiG MUN 2026 (Model United Nations Conference)',
-      'DESCRIPTION:AiG Model United Nations 2026 — Peace. Progress. Prosperity. Official two-day international conference.',
-      'LOCATION:AiG MUN 2026 Venue (TBA)',
+      'SUMMARY:AIC MUN 2026 (Model United Nations Conference)',
+      'DESCRIPTION:AIC Model United Nations 2026 — Peace. Progress. Prosperity. Official two-day international conference.',
+      'LOCATION:AIC MUN 2026 Venue (TBA)',
       'STATUS:CONFIRMED',
       'END:VEVENT',
       'END:VCALENDAR'
@@ -33,7 +33,7 @@ export const ScheduleSection: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', 'AiG-MUN-2026.ics');
+    link.setAttribute('download', 'AIC-MUN-2026.ics');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -57,7 +57,7 @@ export const ScheduleSection: React.FC = () => {
           </h2>
           <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-celestial-ice to-transparent mx-auto mb-6" />
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
-            AiG MUN convenes over two immersive days of formal assemblies, intense caucus negotiations, and resolution balloting.
+            AIC MUN convenes over two immersive days of formal assemblies, intense caucus negotiations, and resolution balloting.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export const ScheduleSection: React.FC = () => {
           <button
             onClick={downloadCalendarEvent}
             className="shrink-0 px-4 py-2 rounded-lg border border-celestial-ice/30 hover:border-celestial-ice bg-space-800/80 hover:bg-space-700 text-slate-200 hover:text-white text-xs font-mono flex items-center space-x-2 transition-all cursor-pointer"
-            aria-label="Add AiG MUN 2026 to your calendar"
+            aria-label="Add AIC MUN 2026 to your calendar"
           >
             <Download className="w-3.5 h-3.5 text-celestial-ice" />
             <span>Save to Calendar (.ics)</span>

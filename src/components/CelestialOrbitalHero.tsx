@@ -102,7 +102,7 @@ export const CelestialOrbitalHero: React.FC<HeroProps> = ({ onRegisterClick, onE
             <div className="absolute -inset-4 bg-gradient-to-r from-sky-500/20 via-blue-600/10 to-transparent rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
             <img 
               src="/assets/aig-mun-logo-transparent.png" 
-              alt="AiG MUN — Peace. Progress. Prosperity." 
+              alt="AIC MUN — Peace. Progress. Prosperity." 
               className="relative w-full h-auto object-contain drop-shadow-[0_0_25px_rgba(140,206,255,0.3)]"
             />
           </div>

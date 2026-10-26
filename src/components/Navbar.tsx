@@ -68,12 +68,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onRegisterClick }) => {
               href="#hero" 
               onClick={(e) => handleNavClick(e, '#hero')}
               className="flex items-center space-x-3 group cursor-pointer focus:outline-none focus:ring-2 focus:ring-celestial-ice/50 rounded-lg p-1"
-              aria-label="AiG MUN Home"
+              aria-label="AIC MUN Home"
             >
               <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-celestial-ice/30 bg-space-800/80 flex items-center justify-center overflow-hidden shadow-[0_0_15px_rgba(140,206,255,0.2)] group-hover:border-celestial-ice/70 transition-colors">
                 <img 
                   src="/assets/aig-mun-logo-transparent.png" 
-                  alt="AiG MUN Emblem" 
+                  alt="AIC MUN Emblem" 
                   className="w-full h-full object-contain p-0.5 transform group-hover:scale-105 transition-transform duration-300"
                 />
               </div>

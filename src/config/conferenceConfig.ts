@@ -1,5 +1,5 @@
 /**
- * AiG MUN 2026 — Official Central Conference Configuration
+ * AIC MUN 2026 — Official Central Conference Configuration
  * 
  * Edit this single file to update conference dates, registration links,
  * committees, schedule details, secretariat information, and contact channels.
@@ -136,9 +136,9 @@ export interface ConferenceConfig {
 
 export const conferenceConfig: ConferenceConfig = {
   event: {
-    name: "AiG MUN",
-    brandMonogram: "AiG",
-    fullName: "AiG Model United Nations 2026",
+    name: "AIC MUN",
+    brandMonogram: "AIC",
+    fullName: "AIC Model United Nations 2026",
     edition: "Inaugural Edition 2026",
     dates: "12th & 13th December 2026",
     startDate: "2026-12-12T09:00:00+05:30", // Asia/Kolkata timezone default 09:00 AM IST
@@ -167,7 +167,7 @@ export const conferenceConfig: ConferenceConfig = {
     delegateFee: "To Be Announced",
     delegationFee: "To Be Announced",
     internationalDelegateFee: "To Be Announced",
-    contactEmail: "registrations@aigmun.org",
+    contactEmail: "registrations@aicmun.org",
     notes: [
       "Individual delegate applications and institutional school/college delegations will be accommodated.",
       "Executive Board applications and International Press Corps accreditations will open simultaneously.",
@@ -177,7 +177,7 @@ export const conferenceConfig: ConferenceConfig = {
 
   committees: {
     areAnnounced: true, // Official committees announced
-    announcementNotice: "The official committees for AiG MUN 2026 have been announced. Comprehensive study guides, committee agendas, and country matrices will be released shortly.",
+    announcementNotice: "The official committees for AIC MUN 2026 have been announced. Comprehensive study guides, committee agendas, and country matrices will be released shortly.",
     items: [
       {
         id: "unga",
@@ -226,7 +226,7 @@ export const conferenceConfig: ConferenceConfig = {
         category: "International Press",
         difficulty: "All Experience Levels",
         agenda: "Press Briefs & Investigative Reporting (Guidelines TBA)",
-        description: "The journalistic vanguard of AiG MUN, responsible for interviewing ambassadors, publishing press bulletins, investigating bloc maneuvers, and delivering fair, unfiltered reporting.",
+        description: "The journalistic vanguard of AIC MUN, responsible for interviewing ambassadors, publishing press bulletins, investigating bloc maneuvers, and delivering fair, unfiltered reporting.",
         matrixAvailable: false
       },
       {
@@ -333,14 +333,14 @@ export const conferenceConfig: ConferenceConfig = {
 
   secretariat: {
     isAnnounced: false, // Toggle to true when team members are ready to display
-    announcementNotice: "The AiG MUN 2026 Executive Secretariat and Organizing Committee appointments are currently underway. Profiles of the Secretary-General and Directorate will be announced shortly.",
+    announcementNotice: "The AIC MUN 2026 Executive Secretariat and Organizing Committee appointments are currently underway. Profiles of the Secretary-General and Directorate will be announced shortly.",
     members: [
       {
         id: "sg",
         name: "To Be Announced",
         role: "Secretary-General",
         division: "Executive Secretariat",
-        bio: "Leading the strategic vision, diplomatic integrity, and overall administration of AiG MUN 2026."
+        bio: "Leading the strategic vision, diplomatic integrity, and overall administration of AIC MUN 2026."
       },
       {
         id: "dg",
@@ -367,7 +367,7 @@ export const conferenceConfig: ConferenceConfig = {
   },
 
   whyParticipate: {
-    title: "Why Participate in AiG MUN?",
+    title: "Why Participate in AIC MUN?",
     subtitle: "A transcendent arena designed to cultivate the diplomats, strategists, and visionaries of tomorrow.",
     skills: [
       {
@@ -417,18 +417,18 @@ export const conferenceConfig: ConferenceConfig = {
     },
     {
       category: "Eligibility & Registration",
-      question: "Can first-time delegates and beginners participate in AiG MUN?",
-      answer: "Absolutely. AiG MUN provides dedicated beginner-friendly committees with introductory rules-of-procedure guides and experienced Executive Board members who foster a supportive, intellectually stimulating environment for newcomers alongside seasoned delegates."
+      question: "Can first-time delegates and beginners participate in AIC MUN?",
+      answer: "Absolutely. AIC MUN provides dedicated beginner-friendly committees with introductory rules-of-procedure guides and experienced Executive Board members who foster a supportive, intellectually stimulating environment for newcomers alongside seasoned delegates."
     },
     {
       category: "Eligibility & Registration",
-      question: "Who is eligible to attend AiG MUN 2026?",
-      answer: "AiG MUN welcomes high school students, college undergraduates, postgraduate scholars, and youth delegations passionate about international relations, public policy, law, and diplomacy. Institutional delegations and independent delegates are equally eligible."
+      question: "Who is eligible to attend AIC MUN 2026?",
+      answer: "AIC MUN welcomes high school students, college undergraduates, postgraduate scholars, and youth delegations passionate about international relations, public policy, law, and diplomacy. Institutional delegations and independent delegates are equally eligible."
     },
     {
       category: "Preparation",
       question: "How should I prepare for my assigned committee and country?",
-      answer: "Each delegate will receive an official AiG MUN Background Guide providing in-depth analysis of the committee's agenda. Preparation involves studying your country's foreign policy, relevant UN conventions, past international actions, and drafting a formal Position Paper articulating your delegation's proposed solutions."
+      answer: "Each delegate will receive an official AIC MUN Background Guide providing in-depth analysis of the committee's agenda. Preparation involves studying your country's foreign policy, relevant UN conventions, past international actions, and drafting a formal Position Paper articulating your delegation's proposed solutions."
     },
     {
       category: "Preparation",
@@ -453,24 +453,24 @@ export const conferenceConfig: ConferenceConfig = {
   ],
 
   contact: {
-    email: "contact@aigmun.org",
+    email: "contact@aicmun.org",
     supportNote: "For institutional delegation queries, faculty advisor coordination, or partnership opportunities, please reach our organizing desk.",
     socials: [
       {
         platform: "Instagram",
-        handle: "@aigmun (Official handle TBA)",
+        handle: "@aicmun (Official handle TBA)",
         url: "#",
         isLive: false
       },
       {
         platform: "LinkedIn",
-        handle: "AiG Model United Nations (TBA)",
+        handle: "AIC Model United Nations (TBA)",
         url: "#",
         isLive: false
       },
       {
         platform: "X / Twitter",
-        handle: "@AiGMUN (TBA)",
+        handle: "@AICMUN (TBA)",
         url: "#",
         isLive: false
       }

@@ -49,7 +49,7 @@ export const CommitteesSection: React.FC = () => {
           </h2>
           <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-celestial-ice to-transparent mx-auto mb-6" />
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
-            Step into the highest echelons of international governance. Below are the anticipated assembly bodies for AiG MUN 2026.
+            Step into the highest echelons of international governance. Below are the anticipated assembly bodies for AIC MUN 2026.
           </p>
         </div>
 
