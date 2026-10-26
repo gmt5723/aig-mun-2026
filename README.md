@@ -32,7 +32,7 @@ A luxury, futuristic, dark-themed official website engineered for **AiG MUN (Mod
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/<your-username>/aig-mun-2026.git
+   git clone https://github.com/gmt5723/aig-mun-2026.git
    cd aig-mun-2026
    ```
 
